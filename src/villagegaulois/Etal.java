@@ -13,8 +13,7 @@ public class Etal<P extends IProduit> implements IEtal {
 		super();
 	}
 
-	@Override
-	public <P> void installerVendeur(Gaulois vendeur, P[] produits, int prix) {
+	public void installerVendeur(Gaulois vendeur, P[] produits, int prix) {
 		this.vendeur = vendeur;
 		this.produits = produits;
 		this.nbProduit = produits.length;
